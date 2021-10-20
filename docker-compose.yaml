@@ -1,6 +1,6 @@
-version: '3.1'
+version: "3.1"
 services:
-  test:
+  test: # docker uses this service name as the name of the image
     build: .
     volumes:
       - .:/pytest_project
