@@ -10,5 +10,5 @@ class Point:
         self._longitude = longtitude
         self._latitude = latitude
 
-    def get_lat_long(self) -> Tuple[int, int]:
+    def get_lat_long(self) -> Tuple[int]:
         return (self._latitude, self._longitude)
