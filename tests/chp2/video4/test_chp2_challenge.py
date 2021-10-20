@@ -21,3 +21,6 @@ def test_invalid_point_generation():
 
     It has already been imported for you on the first line of this file
     """
+    with pytest.raises(TypeError) as exp:
+        Point(5, 99.6969, 120.4056)
+    assert str(exp.value) == "Invalid city name. Must be a string"
